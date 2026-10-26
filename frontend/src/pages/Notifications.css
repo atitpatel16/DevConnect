@@ -1,0 +1,156 @@
+
+.notifications-page {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 32px;
+  color: #e5e7eb;
+}
+
+.notifications-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.notifications-header h1 {
+  margin: 0 0 8px;
+  font-size: 28px;
+}
+
+.notifications-header p {
+  margin: 0;
+  color: #9ca3af;
+}
+
+.notification-count {
+  padding: 8px 12px;
+  border-radius: 20px;
+  background: #1e293b;
+  color: #93c5fd;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.notifications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.notification-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px;
+  border: 1px solid #374151;
+  border-radius: 12px;
+  background: #111827;
+}
+
+.notification-card.unread {
+  border-color: #3b82f6;
+  background: #172033;
+}
+
+.notification-avatar {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #2563eb;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.notification-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.notification-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.notification-content p {
+  margin: 0 0 8px;
+  color: #d1d5db;
+  overflow-wrap: anywhere;
+}
+
+.notification-content strong {
+  color: #ffffff;
+}
+
+.notification-type {
+  color: #9ca3af;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.mark-read-button {
+  border: 1px solid #4b5563;
+  border-radius: 7px;
+  padding: 8px 12px;
+  background: transparent;
+  color: #93c5fd;
+  cursor: pointer;
+}
+
+.mark-read-button:hover {
+  background: #1e293b;
+}
+
+.unread-dot {
+  width: 9px;
+  height: 9px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #3b82f6;
+}
+
+.empty-notifications {
+  padding: 48px 20px;
+  text-align: center;
+  border: 1px dashed #374151;
+  border-radius: 12px;
+  color: #9ca3af;
+}
+
+.empty-notifications h3 {
+  color: #e5e7eb;
+}
+
+.notification-error {
+  margin-bottom: 16px;
+  color: #f87171;
+}
+
+@media (max-width: 600px) {
+  .notifications-page {
+    padding: 20px 12px;
+  }
+
+  .notifications-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .notification-card {
+    flex-wrap: wrap;
+    padding: 14px;
+  }
+
+  .mark-read-button {
+    margin-left: 58px;
+  }
+}

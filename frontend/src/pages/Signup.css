@@ -1,0 +1,53 @@
+
+.signup-page {
+  background: #f7f8ff;
+}
+
+.signup-card {
+  max-width: 480px;
+}
+
+.signup-card .auth-brand {
+  margin-bottom: 27px;
+}
+
+.signup-card .auth-heading {
+  margin-bottom: 24px;
+}
+
+.signup-card .auth-field {
+  margin-bottom: 18px;
+}
+
+.signup-hint {
+  display: block;
+  margin-top: 7px;
+  color: #94a3b8;
+  font-size: 0.76rem;
+}
+
+.signup-decoration-one {
+  top: 10%;
+  right: 7%;
+  width: 220px;
+  height: 220px;
+  background: rgba(199, 210, 254, 0.35);
+}
+
+.signup-decoration-two {
+  left: 5%;
+  bottom: 5%;
+  width: 260px;
+  height: 260px;
+  background: rgba(191, 219, 254, 0.3);
+}
+
+@media (max-width: 500px) {
+  .signup-card {
+    padding: 25px 20px;
+  }
+
+  .signup-card .auth-brand {
+    margin-bottom: 23px;
+  }
+}
